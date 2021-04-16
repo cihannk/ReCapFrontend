@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +12,7 @@ import { RentalsComponent } from './components/rentals/rentals.component';
 import { CategoryComponent } from './components/category/category.component';
 import { ListcontainerComponent } from './components/listcontainer/listcontainer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -24,19 +24,13 @@ import { HttpClientModule } from '@angular/common/http';
     CustomersComponent,
     RentalsComponent,
     CategoryComponent,
-    ListcontainerComponent
+    ListcontainerComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {path: "brands", component: BrandsComponent},
-      {path: "cars", component: CarsComponent},
-      {path: "colors", component: ColorsComponent},
-      {path: "customers", component: CustomersComponent},
-      {path: "rentals", component: RentalsComponent},
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <ul class="list-group">
-    <li class="list-group-item" routerLink="/cars">Cars</li>
-    <li class="list-group-item" routerLink="/rentals">Rentals</li>
-    <li class="list-group-item" routerLink="/customers">Customers</li>
-    <li class="list-group-item" routerLink="/colors">Colors</li>
-    <li class="list-group-item" routerLink="/brands">Brands</li>
+    <li (click)="setSelectedCategory(classes[0])" [class]=setClass(classes[0]) routerLink="/cars">{{classes[0]}}</li>
+    <li (click)="setSelectedCategory(classes[1])" [class]=setClass(classes[1]) routerLink="/rentals">{{classes[1]}}</li>
+    <li (click)="setSelectedCategory(classes[2])" [class]=setClass(classes[2]) routerLink="/customers">{{classes[2]}}</li>
+    <li (click)="setSelectedCategory(classes[3])" [class]=setClass(classes[3]) routerLink="/colors">{{classes[3]}}</li>
+    <li (click)="setSelectedCategory(classes[4])" [class]=setClass(classes[4]) routerLink="/brands">{{classes[4]}}</li>
   </ul>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Rental } from 'src/app/models/rental';
 import { RentalService } from 'src/app/services/rental.service';
 
@@ -9,6 +10,7 @@ import { RentalService } from 'src/app/services/rental.service';
 })
 export class RentalsComponent implements OnInit {
 
+  selectedRental:Rental;
   rentals:Rental[] = [];
   constructor(private rentalService:RentalService) { }
 
